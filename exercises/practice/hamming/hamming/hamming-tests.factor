@@ -6,7 +6,7 @@ USING: hamming tools.test ;
 { 0 } [ "GGACTGAAATCTG" "GGACTGAAATCTG"  distance ] unit-test
 { 9 } [ "GGACGGATTCTG" "AGGACGGATTCT"    distance ] unit-test
 
-[ "AATG" "AAA" distance ] must-fail
-[ "ATA" "AGTG" distance ] must-fail
-[ "" "G"        distance ] must-fail
-[ "G" ""        distance ] must-fail
+[ "AATG" "AAA" distance ] [ "strands must be of equal length" = ] must-fail-with
+[ "ATA" "AGTG" distance ] [ "strands must be of equal length" = ] must-fail-with
+[ "" "G"        distance ] [ "strands must be of equal length" = ] must-fail-with
+[ "G" ""        distance ] [ "strands must be of equal length" = ] must-fail-with
