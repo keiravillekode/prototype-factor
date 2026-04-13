@@ -1,15 +1,40 @@
 # Tests
 
-<!-- TODO: write document
+Factor exercises use the built-in [`tools.test`](https://docs.factorcode.org/content/vocab-tools.test.html) vocabulary for testing.
 
-  This document should describe everything related to running tests in the track.
+## Running tests
 
-  If your track uses skipped tests, this document can explain why thet is used and
-  how to unskip tests.
+From the Factor listener, load and test your vocabulary:
 
-  This document can also link to the testing framework documentation.
+```factor
+"hello-world" test
+```
 
-  The contents of this document are displayed on the track's documentation
-  page at `https://exercism.org/docs/tracks/<track>/tests`.
+This runs all tests defined in the exercise's `-tests.factor` file.
 
-  See https://exercism.org/docs/building/tracks/docs for more information. -->
+## Test syntax
+
+Tests use the `unit-test` word:
+
+```factor
+{ expected-value } [ expression ] unit-test
+```
+
+`unit-test` runs the quotation `[ expression ]` starting with an empty stack and compares the result against the expected value using `=`.
+
+For approximate floating-point comparison, `unit-test~` is used:
+
+```factor
+{ expected epsilon } [ expression ] unit-test~
+```
+
+For testing that code signals an error, `must-fail-with` is used:
+
+```factor
+[ expression ] [ error-predicate ] must-fail-with
+```
+
+## Solving exercises
+
+Each exercise provides a stub solution file (e.g., `hello-world/hello-world.factor`) and a test file (e.g., `hello-world/hello-world-tests.factor`).
+Edit the solution file until all tests pass.

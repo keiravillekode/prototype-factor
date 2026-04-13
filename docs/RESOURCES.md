@@ -1,13 +1,9 @@
 # Resources
 
-<!-- TODO: write document
-
-  This document should link to useful resources.
-
-  Feel free to link to any good resources you know, whether they
-  be websites, videos, mailing lists, etc.
-
-  The contents of this document are displayed on the track's documentation
-  page at `https://exercism.org/docs/tracks/<track>/resources`.
-
-  See https://exercism.org/docs/building/tracks/docs for more information. -->
+- [Factor official website](https://factorcode.org/)
+- [Factor on GitHub](https://github.com/factor/factor)
+- [Factor documentation](https://docs.factorcode.org/)
+- [Factor Discord](https://discord.gg/QxJYZx3QDf)
+- [Factor on Rosetta Code](https://rosettacode.org/wiki/Category:Factor) -- solutions to hundreds of programming tasks
+- [Concatenative language wiki](https://concatenative.org/wiki/view/Factor) -- community wiki, FAQ, and tutorials
+- [Factor on Wikipedia](https://en.wikipedia.org/wiki/Factor_(programming_language))

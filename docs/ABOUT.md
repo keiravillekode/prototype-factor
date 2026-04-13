@@ -1,14 +1,17 @@
 # About
 
-<!-- TODO: write document
+[Factor](https://factorcode.org/) is a dynamic, stack-based, concatenative programming language created by Slava Pestov.
+In Factor, programs are built by composing words that operate on a data stack -- there are no named variables in typical code, and functions (called "words") are composed simply by writing them next to each other.
 
-  This document contains a short introduction to the language.
+Factor stands out for several reasons:
 
-  The introduction should be relatively brief and touch upon what
-  makes the language interesting (and possibly unique). The goal
-  is to help students decide if they want to join this track.
+- **Concatenative**: programs are sequences of words that transform the data stack. Function composition is just concatenation.
+- **Fully compiled**: despite being dynamic and interactive, Factor compiles all code to native machine code for strong performance.
+- **Rich standard library**: Factor ships with vocabularies for HTTP servers, databases, JSON, XML, regular expressions, concurrency, UI toolkits, and much more.
+- **Interactive development**: the bundled listener (REPL) and IDE let you explore, test, and modify code live.
+- **Extensible syntax**: parsing words let you extend the language's syntax from within Factor itself.
 
-  The contents of this document are displayed on the track page,
-  provided the student has not joined the track.
+Factor draws inspiration from Forth, Lisp, and Smalltalk.
+It runs on Linux, macOS, and Windows.
 
-  See https://exercism.org/docs/building/tracks/docs for more information. -->
+Find the community on the [Factor Discord](https://discord.gg/QxJYZx3QDf) and [GitHub](https://github.com/factor/factor).

@@ -1,15 +1,14 @@
 # Installation
 
-<!-- TODO: write document
+Factor distributions can be downloaded from the [official website](https://factorcode.org/).
 
-  This document should describe what the student needs to install
-  to allow working on the track on their local system using the CLI.
+Builds are available for:
 
-  You can include the installation instructions in this document, but
-  usually it is better to link to a resource with the official installation
-  instructions, to prevent the instructions from becoming outdated.
+- Windows
+- macOS
+- Linux
 
-  The contents of this document are displayed on the track's documentation
-  page at `https://exercism.org/docs/tracks/<track>/installation`.
+Download the appropriate archive for your platform, extract it, and run the `factor` executable.
+The distribution includes everything you need: the compiler, standard library, and an integrated development environment with a listener (REPL).
 
-  See https://exercism.org/docs/building/tracks/docs for more information. -->
+See the [Factor FAQ](https://concatenative.org/wiki/view/Factor/FAQ) for additional setup guidance.

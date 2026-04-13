@@ -1,28 +1,28 @@
 {
   "docs": [
     {
-      "uuid": "{{UUID}}",
+      "uuid": "9ec92360-b4b9-4e34-9055-b60b87f02dbc",
       "slug": "installation",
       "path": "docs/INSTALLATION.md",
       "title": "Installing Factor locally",
       "blurb": "Learn how to install Factor locally to solve Exercism's exercises on your own machine"
     },
     {
-      "uuid": "{{UUID}}",
+      "uuid": "db946547-20fa-4c39-9832-a7100b1302e1",
       "slug": "learning",
       "path": "docs/LEARNING.md",
       "title": "How to learn Factor",
       "blurb": "An overview of how to get started from scratch with Factor"
     },
     {
-      "uuid": "{{UUID}}",
+      "uuid": "e3a4a692-aaf6-45b5-84a3-4d62cf1ee384",
       "slug": "tests",
       "path": "docs/TESTS.md",
       "title": "Testing on the Factor track",
       "blurb": "Learn how to test your Factor exercises on Exercism"
     },
     {
-      "uuid": "{{UUID}}",
+      "uuid": "b56374b4-82fd-4aa5-96b6-aee554b4912c",
       "slug": "resources",
       "path": "docs/RESOURCES.md",
       "title": "Useful Factor resources",

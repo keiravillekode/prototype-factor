@@ -1,1 +1,9 @@
-TODO: add snippet
+USING: kernel math math.functions ;
+
+: discriminant ( a b c -- d )
+    [ sq ] dip * 4 * - ;
+
+: quadratic ( a b c -- x1 x2 )
+    over2 discriminant sqrt
+    over2 neg [ + ] [ - ] 2bi
+    [ swap 2 * / ] bi-curry@ bi* ;
