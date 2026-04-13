@@ -8,8 +8,55 @@
     "representer": false,
     "analyzer": false
   },
-  "blurb": "TODO: add blurb",
+  "blurb": "Factor is a dynamic, stack-based, concatenative programming language. Programs are built by composing words that transform a data stack, with no named variables needed. Despite being interactive and dynamic, Factor compiles to native machine code and ships with a rich standard library.",
   "version": 3,
+  "key_features": [
+    {
+      "title": "Concatenative",
+      "content": "Programs are sequences of words that transform the data stack. Composition is just concatenation.",
+      "icon": "functional"
+    },
+    {
+      "title": "Fully Compiled",
+      "content": "Despite being dynamic and interactive, all code is compiled to native machine code.",
+      "icon": "fast"
+    },
+    {
+      "title": "Rich Standard Library",
+      "content": "Ships with vocabularies for HTTP, databases, JSON, XML, regex, concurrency, UI, and more.",
+      "icon": "powerful"
+    },
+    {
+      "title": "Interactive Development",
+      "content": "A bundled listener and IDE let you explore, test, and modify code live.",
+      "icon": "interactive"
+    },
+    {
+      "title": "Extensible Syntax",
+      "content": "Parsing words let you extend the language's syntax from within Factor itself.",
+      "icon": "extensible"
+    },
+    {
+      "title": "Cross-platform",
+      "content": "Runs on Linux, macOS, and Windows with a self-contained distribution.",
+      "icon": "cross-platform"
+    }
+  ],
+  "tags": [
+    "paradigm/stack-oriented",
+    "paradigm/functional",
+    "paradigm/imperative",
+    "typing/dynamic",
+    "typing/strong",
+    "execution_mode/compiled",
+    "platform/linux",
+    "platform/mac",
+    "platform/windows",
+    "runtime/standalone_executable",
+    "used_for/backends",
+    "used_for/scripts",
+    "used_for/web_development"
+  ],
   "online_editor": {
     "indent_style": "space",
     "indent_size": 4
