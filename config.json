@@ -85,6 +85,14 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 4
+      },
+      {
+        "slug": "bob",
+        "name": "Bob",
+        "uuid": "e0ae193c-1b63-4e64-9350-673760f4bccf",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 3
       }
     ]
   }
