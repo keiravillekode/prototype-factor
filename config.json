@@ -1,6 +1,6 @@
 {
   "language": "{{LANGUAGE}}",
-  "slug": "{{SLUG}}",
+  "slug": "factor",
   "active": false,
   "status": {
     "concept_exercises": false,

@@ -31,8 +31,8 @@ copy_example_or_examplar_to_solution() {
 
 pull_docker_image() {
     # shellcheck disable=SC1083
-    docker pull exercism/{{SLUG}}-test-runner ||
-        die $'Could not find the `exercism/{{SLUG}}-test-runner` Docker image.\nCheck the test runner docs at https://exercism.org/docs/building/tooling/test-runners for more information.'
+    docker pull exercism/factor-test-runner ||
+        die $'Could not find the `exercism/factor-test-runner` Docker image.\nCheck the test runner docs at https://exercism.org/docs/building/tooling/test-runners for more information.'
 }
 
 run_tests() {
@@ -47,7 +47,7 @@ run_tests() {
         --mount type=bind,src="${PWD}",dst=/solution \
         --mount type=bind,src="${PWD}",dst=/output \
         --mount type=tmpfs,dst=/tmp \
-        exercism/{{SLUG}}-test-runner "${slug}" /solution /output
+        exercism/factor-test-runner "${slug}" /solution /output
     jq -e '.status == "pass"' "${PWD}/results.json" >/dev/null 2>&1
 }
 

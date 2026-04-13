@@ -2,17 +2,17 @@
 
 #### **Do you want to add an exercise?**
 
-- **Ensure that someone else isn't already adding it** by searching the [forum](https://forum.exercism.org/c/programming/{{SLUG}}) and the repository's [issues](https://github.com/exercism/{{SLUG}}/issues) and [pull requests](https://github.com/exercism/{{SLUG}}/pulls).
+- **Ensure that someone else isn't already adding it** by searching the [forum](https://forum.exercism.org/c/programming/factor) and the repository's [issues](https://github.com/exercism/factor/issues) and [pull requests](https://github.com/exercism/factor/pulls).
 
-- If nobody is yet adding the exercise, [open a conversation](https://forum.exercism.org/c/programming/{{SLUG}}) and indicate you'd like to add the exercise.
+- If nobody is yet adding the exercise, [open a conversation](https://forum.exercism.org/c/programming/factor) and indicate you'd like to add the exercise.
 
 - Follow the [Add a Practice Exercise docs](https://exercism.org/docs/building/tracks/practice-exercises/add).
 
 #### **Do you want to report a bug?**
 
-- **Ensure the bug was not already reported** by searching the [forum](https://forum.exercism.org/c/programming/{{SLUG}}).
+- **Ensure the bug was not already reported** by searching the [forum](https://forum.exercism.org/c/programming/factor).
 
-- If you're unable to find an open conversation addressing the problem, [open a new one](https://forum.exercism.org/new-topic?category={{SLUG}}). Be sure to include a **title and clear description**, as much relevant information as possible, and (when possible) a **code sample**.
+- If you're unable to find an open conversation addressing the problem, [open a new one](https://forum.exercism.org/new-topic?category=factor). Be sure to include a **title and clear description**, as much relevant information as possible, and (when possible) a **code sample**.
 
 #### **Do you want to fix a bug?**
 
@@ -28,7 +28,7 @@
 
 #### **Do you intend to add a new feature or change an existing one?**
 
-- **Ensure that the feature or change is discussed on the [forum](https://forum.exercism.org/c/programming/{{SLUG}}).**
+- **Ensure that the feature or change is discussed on the [forum](https://forum.exercism.org/c/programming/factor).**
   Only start adding the feature or change when there is agreement on whether (and how) it should be added or changed.
 
 - Add the feature or change and [submit a Pull Request](https://exercism.org/docs/building/github/contributors-pull-request-guide) to this repository.
