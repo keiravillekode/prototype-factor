@@ -70,15 +70,30 @@ fi
 exercise_dir="exercises/practice/${slug}"
 files=$(jq -r --arg dir "${exercise_dir}" '.files | to_entries | map({key: .key, value: (.value | map("'"'"'" + $dir + "/" + . + "'"'"'") | join(" and "))}) | from_entries' "${exercise_dir}/.meta/config.json")
 
+# Create skeleton generator module
+module_name=$(echo "${slug}" | sed -r 's/(^|-)(\w)/\U\2/g')
+cat > "${exercise_dir}/.meta/generator.jl" << GENERATOR
+module ${module_name}
+
+const HEADER = "USING: ${slug} tools.test ;"
+
+function gen_test_case(case)
+    error("TODO: implement gen_test_case for ${slug}")
+end
+
+end
+GENERATOR
+
 cat << NEXT_STEPS
 
 Your next steps are:
-- Create the test suite in $(jq -r '.test' <<< "${files}")
+- Edit the generator in '${exercise_dir}/.meta/generator.jl'
   - The tests should be based on the canonical data at 'https://github.com/exercism/problem-specifications/blob/main/exercises/${slug}/canonical-data.json'
-  - Any test cases you don't implement, mark them in 'exercises/practice/${slug}/.meta/tests.toml' with "include = false"
+  - Any test cases you don't implement, mark them in '${exercise_dir}/.meta/tests.toml' with "include = false"
+- Generate the test suite by running 'bin/generate ${slug}'
 - Create the example solution in $(jq -r '.example' <<< "${files}")
-- Verify the example solution passes the tests by running 'bin/verify-exercises ${slug}'
 - Create the stub solution in $(jq -r '.solution' <<< "${files}")
+- Verify the example solution passes the tests by running 'bin/verify-exercises ${slug}'
 - Update the 'difficulty' value for the exercise's entry in the 'config.json' file in the repo's root
 - Validate CI using 'bin/configlet lint' and 'bin/configlet fmt'
 NEXT_STEPS
