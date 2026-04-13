@@ -1,4 +1,4 @@
-# How to contribute to the Exercism {{LANGUAGE}} track
+# How to contribute to the Exercism Factor track
 
 #### **Do you want to add an exercise?**
 

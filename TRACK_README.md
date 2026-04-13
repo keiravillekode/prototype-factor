@@ -1,8 +1,8 @@
-# Exercism {{LANGUAGE}} Track
+# Exercism Factor Track
 
 [![Configlet](https://github.com/exercism/factor/actions/workflows/configlet.yml/badge.svg)](https://github.com/exercism/factor/actions/workflows/configlet.yml) [![Test](https://github.com/exercism/factor/actions/workflows/test.yml/badge.svg)](https://github.com/exercism/factor/actions/workflows/test.yml)
 
-Exercism exercises in {{LANGUAGE}}.
+Exercism exercises in Factor.
 
 ## Testing
 

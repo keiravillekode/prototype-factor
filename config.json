@@ -1,5 +1,5 @@
 {
-  "language": "{{LANGUAGE}}",
+  "language": "Factor",
   "slug": "factor",
   "active": false,
   "status": {

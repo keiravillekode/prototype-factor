@@ -82,7 +82,7 @@ end
   f = File.join(dir, name)
   contents = File.read(f)
   File.open(f, "w") do |f|
-    f.write contents.gsub("factor", slug).gsub("{{LANGUAGE}}", language)
+    f.write contents.gsub("factor", slug).gsub("Factor", language)
   end
 end
 
