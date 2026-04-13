@@ -41,8 +41,8 @@ unskip_tests() {
 
 run_tests() {
     local slug
-    slug=$(basename "${PWD}")
-    "${FACTOR}" -e="USING: vocabs.loader tools.test ; \".\" add-vocab-root \"${slug}\" test"
+    slug="${1}"
+    "${FACTOR}" -e="USING: vocabs.loader tools.test tools.test.private namespaces kernel system ; \".\" add-vocab-root \"${slug}\" require \"${slug}\" test test-failures get empty? [ 0 exit ] [ 1 exit ] if"
 }
 
 verify_exercise() {
@@ -63,7 +63,7 @@ verify_exercise() {
 
         copy_example_or_examplar_to_solution
         unskip_tests
-        run_tests
+        run_tests "${slug}"
     )
 }
 
