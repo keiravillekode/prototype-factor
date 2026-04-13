@@ -15,16 +15,29 @@
     "indent_size": 4
   },
   "files": {
-    "solution": ["%{kebab_slug}/%{kebab_slug}.factor"],
-    "test": ["%{kebab_slug}/%{kebab_slug}-tests.factor"],
-    "example": [".meta/example.factor"],
-    "exemplar": [".meta/exemplar.factor"]
+    "solution": [
+      "%{kebab_slug}/%{kebab_slug}.factor"
+    ],
+    "test": [
+      "%{kebab_slug}/%{kebab_slug}-tests.factor"
+    ],
+    "example": [
+      ".meta/example.factor"
+    ],
+    "exemplar": [
+      ".meta/exemplar.factor"
+    ]
   },
   "exercises": {
-    "concept": [],
-    "practice": []
-  },
-  "concepts": [],
-  "key_features": [],
-  "tags": []
+    "practice": [
+      {
+        "slug": "hello-world",
+        "name": "Hello World",
+        "uuid": "43272b2f-442b-42a7-a2ab-5955949121df",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
+      }
+    ]
+  }
 }
