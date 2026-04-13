@@ -1,6 +1,6 @@
 # Tests
 
-Factor exercises use the built-in [`tools.test`](https://docs.factorcode.org/content/vocab-tools.test.html) vocabulary for testing.
+Factor exercises use the built-in [`tools.test`][tools-test] vocabulary for testing.
 
 ## Running tests
 
@@ -38,3 +38,5 @@ For testing that code signals an error, `must-fail-with` is used:
 
 Each exercise provides a stub solution file (e.g., `hello-world/hello-world.factor`) and a test file (e.g., `hello-world/hello-world-tests.factor`).
 Edit the solution file until all tests pass.
+
+[tools-test]: https://docs.factorcode.org/content/vocab-tools.test.html

@@ -1,6 +1,6 @@
 # About
 
-[Factor](https://factorcode.org/) is a dynamic, stack-based, concatenative programming language created by Slava Pestov.
+[Factor][factor] is a dynamic, stack-based, concatenative programming language created by Slava Pestov.
 In Factor, programs are built by composing words that operate on a data stack -- there are no named variables in typical code, and functions (called "words") are composed simply by writing them next to each other.
 
 Factor stands out for several reasons:
@@ -14,4 +14,8 @@ Factor stands out for several reasons:
 Factor draws inspiration from Forth, Lisp, and Smalltalk.
 It runs on Linux, macOS, and Windows.
 
-Find the community on the [Factor Discord](https://discord.gg/QxJYZx3QDf) and [GitHub](https://github.com/factor/factor).
+Find the community on the [Factor Discord][discord] and [GitHub][github].
+
+[factor]: https://factorcode.org/
+[discord]: https://discord.gg/QxJYZx3QDf
+[github]: https://github.com/factor/factor
