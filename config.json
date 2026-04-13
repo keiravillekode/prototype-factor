@@ -39,14 +39,6 @@
         "difficulty": 1
       },
       {
-        "slug": "leap",
-        "name": "Leap",
-        "uuid": "eec1c67c-ff96-4676-b520-89b779cb9535",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 2
-      },
-      {
         "slug": "darts",
         "name": "Darts",
         "uuid": "b104d555-6be9-4fcf-a225-2ac86560979c",
@@ -58,6 +50,14 @@
         "slug": "difference-of-squares",
         "name": "Difference of Squares",
         "uuid": "c4ac10c4-b848-4b10-a75c-44d034fc5f1e",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
+        "slug": "leap",
+        "name": "Leap",
+        "uuid": "eec1c67c-ff96-4676-b520-89b779cb9535",
         "practices": [],
         "prerequisites": [],
         "difficulty": 2
@@ -79,17 +79,17 @@
         "difficulty": 3
       },
       {
-        "slug": "space-age",
-        "name": "Space Age",
-        "uuid": "92fc6937-1b33-49f1-b66e-7ec7e3786906",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 4
-      },
-      {
         "slug": "bob",
         "name": "Bob",
         "uuid": "e0ae193c-1b63-4e64-9350-673760f4bccf",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 3
+      },
+      {
+        "slug": "hamming",
+        "name": "Hamming",
+        "uuid": "c6b0ff72-b1c0-4589-8f70-a55fa386c99f",
         "practices": [],
         "prerequisites": [],
         "difficulty": 3
@@ -103,12 +103,12 @@
         "difficulty": 3
       },
       {
-        "slug": "hamming",
-        "name": "Hamming",
-        "uuid": "c6b0ff72-b1c0-4589-8f70-a55fa386c99f",
+        "slug": "space-age",
+        "name": "Space Age",
+        "uuid": "92fc6937-1b33-49f1-b66e-7ec7e3786906",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 3
+        "difficulty": 4
       },
       {
         "slug": "all-your-base",
