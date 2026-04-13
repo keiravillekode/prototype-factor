@@ -1,6 +1,11 @@
-USING: raindrops tools.test ;
+USING: raindrops tools.test lexer ;
+
+: STOP-HERE ( -- ) lexer get [ text>> length ] keep line<< ; parsing
 
 { "1" } [ 1 convert ] unit-test
+
+STOP-HERE
+
 { "Pling" } [ 3 convert ] unit-test
 { "Plang" } [ 5 convert ] unit-test
 { "Plong" } [ 7 convert ] unit-test

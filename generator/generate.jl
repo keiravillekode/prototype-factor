@@ -89,10 +89,26 @@ function load_exercise_module(slug)
     return mod
 end
 
+const STOP_HERE_DEF = ": STOP-HERE ( -- ) lexer get [ text>> length ] keep line<< ; parsing"
+
 function render_test_file(mod, cases)
-    lines = String[mod.HEADER, ""]
-    for case in cases
+    header = mod.HEADER
+    if length(cases) > 1
+        header = replace(header, "tools.test" => "tools.test lexer")
+    end
+    lines = String[header]
+    if length(cases) > 1
+        push!(lines, "")
+        push!(lines, STOP_HERE_DEF)
+    end
+    push!(lines, "")
+    for (i, case) in enumerate(cases)
         push!(lines, Base.invokelatest(mod.gen_test_case, case))
+        if i == 1 && length(cases) > 1
+            push!(lines, "")
+            push!(lines, "STOP-HERE")
+            push!(lines, "")
+        end
     end
     push!(lines, "")
     return join(lines, "\n")

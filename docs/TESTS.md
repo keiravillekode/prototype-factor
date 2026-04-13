@@ -39,4 +39,21 @@ For testing that code signals an error, `must-fail-with` is used:
 Each exercise provides a stub solution file (e.g., `hello-world/hello-world.factor`) and a test file (e.g., `hello-world/hello-world-tests.factor`).
 Edit the solution file until all tests pass.
 
+## Working through tests one at a time
+
+Most test files contain a `STOP-HERE` line after the first test.
+When the file is loaded, `STOP-HERE` causes Factor to skip the remaining tests.
+
+```factor
+{ "1" } [ 1 convert ] unit-test
+
+STOP-HERE
+
+{ "Pling" } [ 3 convert ] unit-test
+{ "Plang" } [ 5 convert ] unit-test
+```
+
+Once the first test passes, delete the `STOP-HERE` line (or move it further down) to reveal the next tests.
+When all tests pass, remove `STOP-HERE` entirely.
+
 [tools-test]: https://docs.factorcode.org/content/vocab-tools.test.html
