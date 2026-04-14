@@ -215,14 +215,6 @@
         "difficulty": 3
       },
       {
-        "slug": "square-root",
-        "name": "Square Root",
-        "uuid": "53cef38b-ad56-4462-bf37-48902fd3745c",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 5
-      },
-      {
         "slug": "sum-of-multiples",
         "name": "Sum of Multiples",
         "uuid": "b78220d5-e06b-4476-916c-392140c9dcb5",
@@ -311,6 +303,14 @@
         "difficulty": 5
       },
       {
+        "slug": "square-root",
+        "name": "Square Root",
+        "uuid": "53cef38b-ad56-4462-bf37-48902fd3745c",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
         "slug": "yacht",
         "name": "Yacht",
         "uuid": "c94bbdbb-cdfe-4b53-913c-fc7f705cc0d0",
@@ -389,6 +389,14 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 9
+      },
+      {
+        "slug": "alphametics",
+        "name": "Alphametics",
+        "uuid": "55c79c7d-43d7-444c-b87d-378de2579977",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 10
       }
     ],
     "foregone": [
