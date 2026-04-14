@@ -359,12 +359,12 @@
         "difficulty": 7
       },
       {
-        "slug": "connect",
-        "name": "Connect",
-        "uuid": "aa62b866-3c6b-4804-9a62-dddc45ab5d17",
+        "slug": "nth-prime",
+        "name": "Nth Prime",
+        "uuid": "cbd8dbf2-67da-49fe-a89b-db82e4a9f440",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 9
+        "difficulty": 8
       },
       {
         "slug": "palindrome-products",
@@ -381,6 +381,14 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 8
+      },
+      {
+        "slug": "connect",
+        "name": "Connect",
+        "uuid": "aa62b866-3c6b-4804-9a62-dddc45ab5d17",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 9
       }
     ],
     "foregone": [
