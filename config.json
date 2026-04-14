@@ -87,6 +87,14 @@
         "difficulty": 2
       },
       {
+        "slug": "armstrong-numbers",
+        "name": "Armstrong Numbers",
+        "uuid": "4441ac14-6693-4a08-bfdb-43e106a9e2f0",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 3
+      },
+      {
         "slug": "atbash-cipher",
         "name": "Atbash Cipher",
         "uuid": "8358ba48-a34b-4b9f-b4e7-f539e59d6d5d",
