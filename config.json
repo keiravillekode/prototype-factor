@@ -279,20 +279,20 @@
         "difficulty": 5
       },
       {
+        "slug": "run-length-encoding",
+        "name": "Run-Length Encoding",
+        "uuid": "009090ef-d7fd-4ba5-9942-c6e686069e12",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
         "slug": "yacht",
         "name": "Yacht",
         "uuid": "c94bbdbb-cdfe-4b53-913c-fc7f705cc0d0",
         "practices": [],
         "prerequisites": [],
         "difficulty": 5
-      },
-      {
-        "slug": "palindrome-products",
-        "name": "Palindrome Products",
-        "uuid": "a8c0261a-53e9-48e6-baab-a0951e6ed5e3",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 6
       },
       {
         "slug": "rail-fence-cipher",
@@ -309,6 +309,14 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 6
+      },
+      {
+        "slug": "palindrome-products",
+        "name": "Palindrome Products",
+        "uuid": "a8c0261a-53e9-48e6-baab-a0951e6ed5e3",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 8
       }
     ],
     "foregone": [
