@@ -1,6 +1,7 @@
 {
   "authors": [
-    "keiravillekode"
+    "keiravillekode",
+    "kytrinyx"
   ],
   "files": {
     "solution": [
@@ -15,5 +16,9 @@
   },
   "blurb": "Exercism's classic introductory exercise. Just say \"Hello, World!\".",
   "source": "This is an exercise to introduce users to using Exercism",
-  "source_url": "https://en.wikipedia.org/wiki/%22Hello,_world!%22_program"
+  "source_url": "https://en.wikipedia.org/wiki/%22Hello,_world!%22_program",
+  "contributors": [
+    "catb0t",
+    "sjwarner-bp"
+  ]
 }
