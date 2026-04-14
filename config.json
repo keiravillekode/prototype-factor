@@ -151,6 +151,14 @@
         "difficulty": 3
       },
       {
+        "slug": "line-up",
+        "name": "Line Up",
+        "uuid": "aafcd21c-c1b9-4a1b-bf65-50251f466029",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 3
+      },
+      {
         "slug": "raindrops",
         "name": "Raindrops",
         "uuid": "903ef19b-d6d9-4e27-ac87-2de2546d1f85",
