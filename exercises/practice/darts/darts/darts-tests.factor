@@ -1,6 +1,11 @@
-USING: darts tools.test ;
+USING: darts kernel tools.test lexer ;
+
+: STOP-HERE ( -- ) lexer get [ text>> length ] keep line<< ; parsing
 
 { 0 } [ -9.0 9.0 score ] unit-test
+
+STOP-HERE
+
 { 1 } [ 0.0 10.0 score ] unit-test
 { 5 } [ -5.0 0.0 score ] unit-test
 { 10 } [ 0.0 -1.0 score ] unit-test

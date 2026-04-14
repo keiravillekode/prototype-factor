@@ -1,4 +1,4 @@
-USING: robot-simulator tools.test lexer ;
+USING: robot-simulator kernel tools.test lexer ;
 
 : STOP-HERE ( -- ) lexer get [ text>> length ] keep line<< ; parsing
 

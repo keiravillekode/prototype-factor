@@ -1,4 +1,4 @@
-USING: crypto-square tools.test lexer ;
+USING: crypto-square kernel tools.test lexer ;
 
 : STOP-HERE ( -- ) lexer get [ text>> length ] keep line<< ; parsing
 

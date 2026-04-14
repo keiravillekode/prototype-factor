@@ -1,6 +1,11 @@
-USING: bob tools.test ;
+USING: bob kernel tools.test lexer ;
+
+: STOP-HERE ( -- ) lexer get [ text>> length ] keep line<< ; parsing
 
 { "Whatever." } [ "Tom-ay-to, tom-aaaah-to." response ] unit-test
+
+STOP-HERE
+
 { "Whoa, chill out!" } [ "WATCH OUT!" response ] unit-test
 { "Whoa, chill out!" } [ "FCECDFCAAB" response ] unit-test
 { "Sure." } [ "Does this cryogenic chamber make me look fat?" response ] unit-test

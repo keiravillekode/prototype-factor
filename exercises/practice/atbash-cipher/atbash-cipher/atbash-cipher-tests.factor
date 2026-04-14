@@ -1,6 +1,11 @@
-USING: atbash-cipher tools.test ;
+USING: atbash-cipher kernel tools.test lexer ;
+
+: STOP-HERE ( -- ) lexer get [ text>> length ] keep line<< ; parsing
 
 { "bvh" } [ "yes" encode ] unit-test
+
+STOP-HERE
+
 { "ml" } [ "no" encode ] unit-test
 { "lnt" } [ "OMG" encode ] unit-test
 { "lnt" } [ "O M G" encode ] unit-test

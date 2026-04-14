@@ -1,6 +1,11 @@
-USING: leap tools.test ;
+USING: leap kernel tools.test lexer ;
+
+: STOP-HERE ( -- ) lexer get [ text>> length ] keep line<< ; parsing
 
 { f } [ 2015 leap-year? ] unit-test
+
+STOP-HERE
+
 { f } [ 1970 leap-year? ] unit-test
 { t } [ 1996 leap-year? ] unit-test
 { t } [ 1960 leap-year? ] unit-test

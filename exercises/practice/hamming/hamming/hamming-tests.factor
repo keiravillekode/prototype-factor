@@ -1,6 +1,11 @@
-USING: hamming tools.test ;
+USING: hamming kernel tools.test lexer ;
+
+: STOP-HERE ( -- ) lexer get [ text>> length ] keep line<< ; parsing
 
 { 0 } [ "" "" distance ] unit-test
+
+STOP-HERE
+
 { 0 } [ "A" "A" distance ] unit-test
 { 1 } [ "G" "T" distance ] unit-test
 { 0 } [ "GGACTGAAATCTG" "GGACTGAAATCTG" distance ] unit-test

@@ -1,4 +1,4 @@
-USING: rna-transcription tools.test lexer ;
+USING: rna-transcription kernel tools.test lexer ;
 
 : STOP-HERE ( -- ) lexer get [ text>> length ] keep line<< ; parsing
 

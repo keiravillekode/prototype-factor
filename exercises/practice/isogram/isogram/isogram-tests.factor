@@ -1,4 +1,4 @@
-USING: isogram tools.test lexer ;
+USING: isogram kernel tools.test lexer ;
 
 : STOP-HERE ( -- ) lexer get [ text>> length ] keep line<< ; parsing
 

@@ -1,6 +1,11 @@
-USING: space-age tools.test ;
+USING: space-age kernel tools.test lexer ;
+
+: STOP-HERE ( -- ) lexer get [ text>> length ] keep line<< ; parsing
 
 { 31.69  0.005 } [ 1000000000 on-earth ] unit-test~
+
+STOP-HERE
+
 { 280.88  0.005 } [ 2134835688 on-mercury ] unit-test~
 { 9.78  0.005 } [ 189839836 on-venus ] unit-test~
 { 35.88  0.005 } [ 2129871239 on-mars ] unit-test~

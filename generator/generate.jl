@@ -94,7 +94,9 @@ const STOP_HERE_DEF = ": STOP-HERE ( -- ) lexer get [ text>> length ] keep line<
 function render_test_file(mod, cases)
     header = mod.HEADER
     if length(cases) > 1
-        header = replace(header, "tools.test" => "tools.test lexer")
+        header = replace(header, "tools.test" => "kernel tools.test lexer")
+    else
+        header = replace(header, "tools.test" => "kernel tools.test")
     end
     lines = String[header]
     if length(cases) > 1

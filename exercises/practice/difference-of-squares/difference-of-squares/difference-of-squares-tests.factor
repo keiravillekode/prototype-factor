@@ -1,6 +1,11 @@
-USING: difference-of-squares tools.test ;
+USING: difference-of-squares kernel tools.test lexer ;
+
+: STOP-HERE ( -- ) lexer get [ text>> length ] keep line<< ; parsing
 
 { 1 } [ 1 square-of-sum ] unit-test
+
+STOP-HERE
+
 { 225 } [ 5 square-of-sum ] unit-test
 { 25502500 } [ 100 square-of-sum ] unit-test
 { 1 } [ 1 sum-of-squares ] unit-test

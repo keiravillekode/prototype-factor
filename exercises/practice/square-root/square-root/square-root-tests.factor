@@ -1,4 +1,4 @@
-USING: square-root tools.test lexer ;
+USING: square-root kernel tools.test lexer ;
 
 : STOP-HERE ( -- ) lexer get [ text>> length ] keep line<< ; parsing
 

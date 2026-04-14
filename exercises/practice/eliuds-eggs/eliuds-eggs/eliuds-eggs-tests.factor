@@ -1,4 +1,4 @@
-USING: eliuds-eggs tools.test lexer ;
+USING: eliuds-eggs kernel tools.test lexer ;
 
 : STOP-HERE ( -- ) lexer get [ text>> length ] keep line<< ; parsing
 

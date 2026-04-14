@@ -1,4 +1,4 @@
-USING: sum-of-multiples tools.test lexer ;
+USING: sum-of-multiples kernel tools.test lexer ;
 
 : STOP-HERE ( -- ) lexer get [ text>> length ] keep line<< ; parsing
 

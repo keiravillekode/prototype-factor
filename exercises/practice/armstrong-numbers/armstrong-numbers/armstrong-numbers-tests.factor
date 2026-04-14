@@ -1,4 +1,4 @@
-USING: armstrong-numbers tools.test lexer ;
+USING: armstrong-numbers kernel tools.test lexer ;
 
 : STOP-HERE ( -- ) lexer get [ text>> length ] keep line<< ; parsing
 

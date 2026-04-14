@@ -1,4 +1,4 @@
-USING: collatz-conjecture tools.test lexer ;
+USING: collatz-conjecture kernel tools.test lexer ;
 
 : STOP-HERE ( -- ) lexer get [ text>> length ] keep line<< ; parsing
 

@@ -1,4 +1,4 @@
-USING: isbn-verifier tools.test lexer ;
+USING: isbn-verifier kernel tools.test lexer ;
 
 : STOP-HERE ( -- ) lexer get [ text>> length ] keep line<< ; parsing
 

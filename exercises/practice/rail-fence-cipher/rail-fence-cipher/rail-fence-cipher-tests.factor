@@ -1,4 +1,4 @@
-USING: rail-fence-cipher tools.test lexer ;
+USING: rail-fence-cipher kernel tools.test lexer ;
 
 : STOP-HERE ( -- ) lexer get [ text>> length ] keep line<< ; parsing
 

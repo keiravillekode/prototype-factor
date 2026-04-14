@@ -1,4 +1,4 @@
-USING: raindrops tools.test lexer ;
+USING: raindrops kernel tools.test lexer ;
 
 : STOP-HERE ( -- ) lexer get [ text>> length ] keep line<< ; parsing
 

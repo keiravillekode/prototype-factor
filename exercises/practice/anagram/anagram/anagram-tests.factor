@@ -1,6 +1,11 @@
-USING: anagram tools.test ;
+USING: anagram kernel tools.test lexer ;
+
+: STOP-HERE ( -- ) lexer get [ text>> length ] keep line<< ; parsing
 
 { { } } [ "diaper" { "hello" "world" "zombies" "pants" } find-anagrams ] unit-test
+
+STOP-HERE
+
 { { "lemons" "melons" } } [ "solemn" { "lemons" "cherry" "melons" } find-anagrams ] unit-test
 { { } } [ "good" { "dog" "goody" } find-anagrams ] unit-test
 { { "inlets" } } [ "listen" { "enlists" "google" "inlets" "banana" } find-anagrams ] unit-test

@@ -1,6 +1,11 @@
-USING: pangram tools.test ;
+USING: pangram kernel tools.test lexer ;
+
+: STOP-HERE ( -- ) lexer get [ text>> length ] keep line<< ; parsing
 
 { f } [ "" pangram? ] unit-test
+
+STOP-HERE
+
 { t } [ "abcdefghijklmnopqrstuvwxyz" pangram? ] unit-test
 { t } [ "the quick brown fox jumps over the lazy dog" pangram? ] unit-test
 { f } [ "a quick movement of the enemy will jeopardize five gunboats" pangram? ] unit-test

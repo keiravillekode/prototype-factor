@@ -1,6 +1,11 @@
-USING: all-your-base tools.test ;
+USING: all-your-base kernel tools.test lexer ;
+
+: STOP-HERE ( -- ) lexer get [ text>> length ] keep line<< ; parsing
 
 { { 1 } } [ { 1 } 2 10 rebase ] unit-test
+
+STOP-HERE
+
 { { 5 } } [ { 1 0 1 } 2 10 rebase ] unit-test
 { { 1 0 1 } } [ { 5 } 10 2 rebase ] unit-test
 { { 4 2 } } [ { 1 0 1 0 1 0 } 2 10 rebase ] unit-test
