@@ -215,14 +215,6 @@
         "difficulty": 3
       },
       {
-        "slug": "sieve",
-        "name": "Sieve",
-        "uuid": "8b1fc515-71c2-436c-98dc-8789d25c7ddb",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 4
-      },
-      {
         "slug": "square-root",
         "name": "Square Root",
         "uuid": "53cef38b-ad56-4462-bf37-48902fd3745c",
@@ -250,6 +242,14 @@
         "slug": "robot-simulator",
         "name": "Robot Simulator",
         "uuid": "69868e6a-7e87-4cff-8f36-dd24c042e879",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 4
+      },
+      {
+        "slug": "sieve",
+        "name": "Sieve",
+        "uuid": "8b1fc515-71c2-436c-98dc-8789d25c7ddb",
         "practices": [],
         "prerequisites": [],
         "difficulty": 4
@@ -317,6 +317,14 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 5
+      },
+      {
+        "slug": "game-of-life",
+        "name": "Conway's Game of Life",
+        "uuid": "36771f7d-aee3-44bd-a718-60efeaca3a8a",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 6
       },
       {
         "slug": "rail-fence-cipher",
