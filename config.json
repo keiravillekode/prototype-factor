@@ -327,6 +327,14 @@
         "difficulty": 6
       },
       {
+        "slug": "rectangles",
+        "name": "Rectangles",
+        "uuid": "bfcd7856-38df-48e5-9bf1-438962ac44f8",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 7
+      },
+      {
         "slug": "palindrome-products",
         "name": "Palindrome Products",
         "uuid": "a8c0261a-53e9-48e6-baab-a0951e6ed5e3",
