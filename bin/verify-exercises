@@ -76,16 +76,24 @@ verify_exercises() {
     exercise_slug="${1}"
 
     local rc=0
+    local -a failed=()
 
     shopt -s nullglob
     count=0
     for exercise_dir in ./exercises/{concept,practice}/${exercise_slug}/; do
         if [[ -d "${exercise_dir}" ]]; then
-            verify_exercise "${exercise_dir}" || rc=$?
+            if ! verify_exercise "${exercise_dir}"; then
+                rc=1
+                failed+=("$(basename "${exercise_dir}")")
+            fi
             ((++count))
         fi
     done
     ((count > 0)) || die 'no matching exercises found!'
+    if (( ${#failed[@]} > 0 )); then
+        echo >&2 ""
+        echo >&2 "FAILED: ${failed[*]}"
+    fi
     return "${rc}"
 }
 
