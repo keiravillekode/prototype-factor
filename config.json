@@ -175,6 +175,14 @@
         "difficulty": 3
       },
       {
+        "slug": "isbn-verifier",
+        "name": "ISBN Verifier",
+        "uuid": "6c77589b-5aaf-47c7-be19-f0c154ee9427",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 3
+      },
+      {
         "slug": "line-up",
         "name": "Line Up",
         "uuid": "aafcd21c-c1b9-4a1b-bf65-50251f466029",
