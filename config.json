@@ -39,6 +39,14 @@
         "difficulty": 1
       },
       {
+        "slug": "acronym",
+        "name": "Acronym",
+        "uuid": "a850eaf1-2a7b-4ed4-9cb7-7806ea3603a0",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "darts",
         "name": "Darts",
         "uuid": "b104d555-6be9-4fcf-a225-2ac86560979c",
