@@ -3,7 +3,7 @@ module Sieve
 const HEADER = "USING: sieve tools.test ;"
 
 function format_array(arr)
-    return "{ $(join(map(x -> string(Int(x)), arr), " ")) }"
+    return "V{ $(join(map(x -> string(Int(x)), arr), " ")) }"
 end
 
 function gen_test_case(case)

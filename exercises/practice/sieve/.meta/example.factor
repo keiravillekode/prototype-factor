@@ -2,7 +2,7 @@ USING: arrays kernel locals math math.functions ranges sequences ;
 IN: sieve
 
 :: primes ( limit -- primes )
-    limit 2 < [ { } ] [
+    limit 2 < [ V{ } ] [
         limit 1 + t <array> :> sieve
         limit sqrt >integer :> max-i
         max-i 2 >= [
@@ -16,5 +16,5 @@ IN: sieve
                 ] when
             ] each
         ] when
-        2 limit [a..b] [ sieve nth ] filter >array
+        2 limit [a..b] [ sieve nth ] filter
     ] if ;
