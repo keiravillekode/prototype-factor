@@ -279,6 +279,14 @@
         "difficulty": 5
       },
       {
+        "slug": "yacht",
+        "name": "Yacht",
+        "uuid": "c94bbdbb-cdfe-4b53-913c-fc7f705cc0d0",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
         "slug": "palindrome-products",
         "name": "Palindrome Products",
         "uuid": "a8c0261a-53e9-48e6-baab-a0951e6ed5e3",
