@@ -1,56 +1,54 @@
-USING: arrays hashtables kernel locals math sequences strings
-vectors ;
+USING: arrays assocs hashtables kernel locals math sequences
+strings vectors ;
 IN: connect
-
-:: parse-board ( board -- grid )
-    board [| row i |
-        row i tail [ CHAR: \s = not ] filter
-    ] map-index ;
-
-:: cell-at ( grid r c -- ch/f )
-    r 0 >= r grid length < and
-    c 0 >= c r grid nth length < and and
-    [ r grid nth c swap nth ] [ f ] if ;
 
 CONSTANT: hex-dirs { { -1 0 } { -1 1 } { 0 -1 } { 0 1 } { 1 -1 } { 1 0 } }
 
-:: bfs ( grid ch starts goal? -- ? )
+:: cell-at ( board rows cols r c -- ch )
+    r 0 >= r rows < and c 0 >= c cols < and and
+    [ r board nth r c 2 * + swap nth ] [ CHAR: \s ] if ;
+
+:: wins? ( board rows cols ch start-rc goal-rc -- ? )
     H{ } clone :> visited
-    starts >vector :> queue
-    0 :> qi!
+    V{ } clone :> queue
+    start-rc [| rc |
+        board rows cols rc first rc second cell-at ch =
+        [ rc first cols * rc second + queue push ] when
+    ] each
     f :> found!
+    0 :> qi!
     [ qi queue length < found not and ] [
-        qi queue nth :> pos
+        qi queue nth :> key
         qi 1 + qi!
-        pos visited key? not [
-            pos first2 :> ( r c )
-            grid r c cell-at ch = [
-                t pos visited set-at
-                r c goal? call( r c -- ? ) [
-                    t found!
-                ] [
-                    hex-dirs [| d |
-                        r d first + c d second + 2array :> nb
-                        nb visited key? not [ nb queue push ] when
-                    ] each
-                ] if
-            ] when
+        key visited key? not [
+            t key visited set-at
+            key cols /i :> r
+            key cols mod :> c
+            r c goal-rc call( r c -- ? ) [ t found! ] [
+                hex-dirs [| d |
+                    r d first + :> nr
+                    c d second + :> nc
+                    board rows cols nr nc cell-at ch = [
+                        nr cols * nc + :> nk
+                        nk visited key? not [ nk queue push ] when
+                    ] when
+                ] each
+            ] if
         ] when
     ] while
     found ;
 
 :: winner ( board -- str )
-    board parse-board :> grid
-    grid empty? [ "" ] [
-        grid first length :> cols
-        grid length :> rows
-        grid CHAR: X
+    board length :> rows
+    rows 0 = [ "" ] [
+        board first length 1 + 2 /i :> cols
+        board rows cols CHAR: X
         rows <iota> [ 0 2array ] map >array
-        [ nip cols 1 - = ] bfs
+        [ nip cols 1 - = ] wins?
         [ "X" ] [
-            grid CHAR: O
+            board rows cols CHAR: O
             cols <iota> [ 0 swap 2array ] map >array
-            [ drop rows 1 - = ] bfs
+            [ drop rows 1 - = ] wins?
             [ "O" ] [ "" ] if
         ] if
     ] if ;
