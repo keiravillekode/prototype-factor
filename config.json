@@ -271,6 +271,14 @@
         "difficulty": 5
       },
       {
+        "slug": "matching-brackets",
+        "name": "Matching Brackets",
+        "uuid": "afef364d-12dd-42fd-bbc8-f2c6228f0f53",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
         "slug": "palindrome-products",
         "name": "Palindrome Products",
         "uuid": "a8c0261a-53e9-48e6-baab-a0951e6ed5e3",
