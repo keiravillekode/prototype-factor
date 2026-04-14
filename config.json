@@ -337,6 +337,7 @@
     ],
     "foregone": [
       "bank-account",
+      "binary-search",
       "parallel-letter-frequency"
     ]
   },
