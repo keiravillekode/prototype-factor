@@ -18,3 +18,5 @@ STOP-HERE
 [ 10000 1 smallest ] [ "min must be <= max" = ] must-fail-with
 [ 2 1 largest ] [ "min must be <= max" = ] must-fail-with
 { { 10988901 { { 3297 3333 } } } } [ 3215 4000 smallest ] unit-test
+{ { 50067176005 { { 223619 223895 } } } } [ 223617 244818 smallest ] unit-test
+{ { 59842824895 { { 244445 244811 } } } } [ 223617 244818 largest ] unit-test
