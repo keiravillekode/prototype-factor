@@ -359,6 +359,14 @@
         "difficulty": 7
       },
       {
+        "slug": "connect",
+        "name": "Connect",
+        "uuid": "aa62b866-3c6b-4804-9a62-dddc45ab5d17",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 8
+      },
+      {
         "slug": "palindrome-products",
         "name": "Palindrome Products",
         "uuid": "a8c0261a-53e9-48e6-baab-a0951e6ed5e3",
