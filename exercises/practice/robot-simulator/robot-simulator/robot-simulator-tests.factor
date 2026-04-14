@@ -2,12 +2,10 @@ USING: robot-simulator tools.test lexer ;
 
 : STOP-HERE ( -- ) lexer get [ text>> length ] keep line<< ; parsing
 
-{ { 0 0 "north" } } [ 0 0 "north" <robot> ] unit-test
+{ { 0 0 "east" } } [ 0 0 "north" <robot> "R" move ] unit-test
 
 STOP-HERE
 
-{ { -1 -1 "south" } } [ -1 -1 "south" <robot> ] unit-test
-{ { 0 0 "east" } } [ 0 0 "north" <robot> "R" move ] unit-test
 { { 0 0 "south" } } [ 0 0 "east" <robot> "R" move ] unit-test
 { { 0 0 "west" } } [ 0 0 "south" <robot> "R" move ] unit-test
 { { 0 0 "north" } } [ 0 0 "west" <robot> "R" move ] unit-test

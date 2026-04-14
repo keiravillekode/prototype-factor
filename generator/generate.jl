@@ -1,5 +1,5 @@
 #!/usr/bin/env julia
-using JSON3, TOML, OteraEngine
+using JSON3, TOML
 
 const GENERATOR_DIR = @__DIR__
 const TRACK_DIR = dirname(GENERATOR_DIR)
