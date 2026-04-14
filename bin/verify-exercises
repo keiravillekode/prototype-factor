@@ -52,19 +52,22 @@ verify_exercise() {
 
     dir=$(realpath "${1}")
     slug=$(basename "${dir}")
-    tmp_dir=$(mktemp -d -t "exercism-verify-${slug}-XXXXX")
+    tmp_dir="$(pwd)/test-exercises/${slug}"
 
     echo "Verifying ${slug} exercise..."
 
+    rm -rf "${tmp_dir}" 2>/dev/null || true
+    mkdir -p "${tmp_dir}"
+    cp -r "${dir}/." "${tmp_dir}"
+    local rc=0
     (
-        trap 'rm -rf "$tmp_dir"' EXIT    # remove tempdir when subshell ends
-        cp -r "${dir}/." "${tmp_dir}"
         cd "${tmp_dir}"
-
         copy_example_or_examplar_to_solution
         unskip_tests
         run_tests "${slug}"
-    )
+    ) || rc=$?
+    rm -rf "${tmp_dir}" 2>/dev/null || true
+    return "${rc}"
 }
 
 verify_exercises() {
@@ -72,15 +75,18 @@ verify_exercises() {
 
     exercise_slug="${1}"
 
+    local rc=0
+
     shopt -s nullglob
     count=0
     for exercise_dir in ./exercises/{concept,practice}/${exercise_slug}/; do
         if [[ -d "${exercise_dir}" ]]; then
-            verify_exercise "${exercise_dir}"
+            verify_exercise "${exercise_dir}" || rc=$?
             ((++count))
         fi
     done
     ((count > 0)) || die 'no matching exercises found!'
+    return "${rc}"
 }
 
 exercise_slug="${1:-*}"

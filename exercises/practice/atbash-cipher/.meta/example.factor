@@ -1,10 +1,13 @@
-USING: ascii kernel math sequences strings ;
+USING: grouping kernel math math.order sequences strings unicode ;
 IN: atbash-cipher
 
-: atbash-char ( ch -- ch' )
-    dup Letter? [ >lower CHAR: a - CHAR: z swap - ] when ;
+: lower-char ( ch -- ch )
+    dup CHAR: A CHAR: Z between? [ CHAR: A - CHAR: a + ] when ;
 
-: atbash-core ( phrase -- str )
+: atbash-char ( ch -- ch )
+    dup Letter? [ lower-char CHAR: a - CHAR: z swap - ] when ;
+
+: atbash-core ( phrase -- seq )
     [ dup Letter? swap digit? or ] filter
     [ atbash-char ] map ;
 

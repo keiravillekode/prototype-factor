@@ -1,4 +1,4 @@
-USING: kernel math math.ranges sequences ;
+USING: kernel math ranges sequences ;
 IN: difference-of-squares
 
 : square-of-sum ( n -- m )

@@ -1,4 +1,4 @@
-USING: kernel math sequences ;
+USING: assocs kernel math sequences ;
 IN: hamming
 
 : distance ( strand1 strand2 -- n )

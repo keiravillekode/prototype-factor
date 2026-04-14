@@ -1,4 +1,4 @@
-USING: combinators kernel locals math sequences strings unicode ;
+USING: combinators kernel locals math sequences sets strings unicode ;
 IN: isbn-verifier
 
 :: valid? ( isbn -- ? )

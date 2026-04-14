@@ -1,4 +1,4 @@
-USING: kernel locals math sequences strings unicode ;
+USING: kernel locals math sequences sets strings unicode ;
 IN: luhn
 
 :: valid? ( value -- ? )

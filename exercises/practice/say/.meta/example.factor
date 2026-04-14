@@ -1,4 +1,4 @@
-USING: kernel math math.order math.parser sequences strings ;
+USING: kernel locals math math.order sequences strings ;
 IN: say
 
 CONSTANT: ones { "zero" "one" "two" "three" "four" "five" "six" "seven" "eight" "nine"
@@ -18,16 +18,18 @@ CONSTANT: tens { f f "twenty" "thirty" "forty" "fifty" "sixty" "seventy" "eighty
         swap dup 0 = [ drop ] [ say-below-100 " " glue ] if
     ] if ;
 
-: say-chunk ( n scale name -- str remainder )
-    [ /mod swap say-below-1000 ] dip " " append prepend swap ;
+:: say-chunk ( str n scale name -- str' remainder )
+    n scale /mod :> ( q r )
+    q say-below-1000 " " name 3append
+    str empty? [ ] [ str " " rot 3append ] if
+    r ;
 
 : say-positive ( n -- str )
     "" swap
     dup 1000000000 >= [ 1000000000 "billion" say-chunk ] when
     dup 1000000 >= [ 1000000 "million" say-chunk ] when
     dup 1000 >= [ 1000 "thousand" say-chunk ] when
-    dup 0 > [ say-below-1000 ] [ drop ] if
-    dup empty? [ drop ] [ " " glue ] if ;
+    dup 0 > [ say-below-1000 swap dup empty? [ drop ] [ " " rot 3append ] if ] [ drop ] if ;
 
 : say ( n -- str )
     dup 0 999999999999 between? [ "input out of range" throw ] unless
