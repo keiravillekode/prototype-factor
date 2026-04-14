@@ -18,3 +18,5 @@ STOP-HERE
 { "  hsqq qww  " } [ "2 hs2q q2w2 " decode ] unit-test
 { "aabbbcccc" } [ "2a3b4c" decode ] unit-test
 { "zzz ZZ  zZ" } [ "zzz ZZ  zZ" encode decode ] unit-test
+{ "123z" } [ "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz" encode ] unit-test
+{ "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz" } [ "123z" decode ] unit-test

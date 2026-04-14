@@ -15,3 +15,4 @@ STOP-HERE
 { "Xiwxmrk 1 2 3 xiwxmrk" } [ "Testing 1 2 3 testing" 4 rotate ] unit-test
 { "Gzo'n zvo, Bmviyhv!" } [ "Let's eat, Grandma!" 21 rotate ] unit-test
 { "Gur dhvpx oebja sbk whzcf bire gur ynml qbt." } [ "The quick brown fox jumps over the lazy dog." 13 rotate ] unit-test
+{ "/09:@NZAM[`nzam{" } [ "/09:@AMNZ[`amnz{" 13 rotate ] unit-test

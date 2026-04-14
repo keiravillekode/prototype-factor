@@ -11,3 +11,4 @@ STOP-HERE
 { 9 } [ 81 square-root ] unit-test
 { 14 } [ 196 square-root ] unit-test
 { 255 } [ 65025 square-root ] unit-test
+{ 70040 } [ 4905601600 square-root ] unit-test

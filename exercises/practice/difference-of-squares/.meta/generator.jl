@@ -9,10 +9,17 @@ const PROPERTIES = Dict(
 )
 
 function gen_test_case(case)
-    number = case["input"]["number"]
-    expected = case["expected"]
-    word = PROPERTIES[case["property"]]
-    return "{ $(expected) } [ $(number) $(word) ] unit-test"
+    n = Int(case["input"]["number"])
+    prop = case["property"]
+    word = PROPERTIES[prop]
+    expected = if prop == "squareOfSum"
+        (BigInt(n) * (n + 1) ÷ 2)^2
+    elseif prop == "sumOfSquares"
+        BigInt(n) * (n + 1) * (2n + 1) ÷ 6
+    else
+        (BigInt(n) * (n + 1) ÷ 2)^2 - BigInt(n) * (n + 1) * (2n + 1) ÷ 6
+    end
+    return "{ $(expected) } [ $(n) $(word) ] unit-test"
 end
 
 end

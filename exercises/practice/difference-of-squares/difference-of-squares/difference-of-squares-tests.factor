@@ -14,3 +14,6 @@ STOP-HERE
 { 0 } [ 1 difference-of-squares ] unit-test
 { 170 } [ 5 difference-of-squares ] unit-test
 { 25164150 } [ 100 difference-of-squares ] unit-test
+{ 16402864502025000000 } [ 90000 square-of-sum ] unit-test
+{ 243004050015000 } [ 90000 sum-of-squares ] unit-test
+{ 16402621497974985000 } [ 90000 difference-of-squares ] unit-test
