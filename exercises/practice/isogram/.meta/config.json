@@ -2,6 +2,9 @@
   "authors": [
     "keiravillekode"
   ],
+  "contributors": [
+    "sjwarner-bp"
+  ],
   "files": {
     "solution": [
       "isogram/isogram.factor"
@@ -15,8 +18,5 @@
   },
   "blurb": "Determine if a word or phrase is an isogram.",
   "source": "Wikipedia",
-  "source_url": "https://en.wikipedia.org/wiki/Isogram",
-  "contributors": [
-    "sjwarner-bp"
-  ]
+  "source_url": "https://en.wikipedia.org/wiki/Isogram"
 }

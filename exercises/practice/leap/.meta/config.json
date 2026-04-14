@@ -3,6 +3,9 @@
     "catb0t",
     "keiravillekode"
   ],
+  "contributors": [
+    "sjwarner-bp"
+  ],
   "files": {
     "solution": [
       "leap/leap.factor"
@@ -16,8 +19,5 @@
   },
   "blurb": "Determine whether a given year is a leap year.",
   "source": "CodeRanch Cattle Drive, Assignment 3",
-  "source_url": "https://web.archive.org/web/20240907033714/https://coderanch.com/t/718816/Leap",
-  "contributors": [
-    "sjwarner-bp"
-  ]
+  "source_url": "https://web.archive.org/web/20240907033714/https://coderanch.com/t/718816/Leap"
 }
