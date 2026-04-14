@@ -207,6 +207,14 @@
         "difficulty": 3
       },
       {
+        "slug": "robot-simulator",
+        "name": "Robot Simulator",
+        "uuid": "69868e6a-7e87-4cff-8f36-dd24c042e879",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 4
+      },
+      {
         "slug": "space-age",
         "name": "Space Age",
         "uuid": "92fc6937-1b33-49f1-b66e-7ec7e3786906",
