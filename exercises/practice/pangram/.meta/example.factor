@@ -2,4 +2,4 @@ USING: kernel sequences sets unicode ;
 IN: pangram
 
 : pangram? ( sentence -- ? )
-    >lower [ Letter? ] filter unique length 26 >= ;
+    >lower [ Letter? ] filter members length 26 >= ;
