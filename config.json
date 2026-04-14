@@ -111,6 +111,14 @@
         "difficulty": 2
       },
       {
+        "slug": "reverse-string",
+        "name": "Reverse String",
+        "uuid": "19c0927e-270b-44d8-bb9a-d8eab63becc7",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "two-fer",
         "name": "Two-Fer",
         "uuid": "b86f031e-d010-4be9-8dad-23fa52b32ba8",
