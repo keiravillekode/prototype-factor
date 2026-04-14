@@ -142,6 +142,10 @@
         "prerequisites": [],
         "difficulty": 6
       }
+    ],
+    "foregone": [
+      "bank-account",
+      "parallel-letter-frequency"
     ]
   },
   "key_features": [
