@@ -127,6 +127,14 @@
         "difficulty": 2
       },
       {
+        "slug": "triangle",
+        "name": "Triangle",
+        "uuid": "8c14609c-7c39-4cba-b5d5-e41866503681",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "two-fer",
         "name": "Two-Fer",
         "uuid": "b86f031e-d010-4be9-8dad-23fa52b32ba8",
