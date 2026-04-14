@@ -82,6 +82,12 @@ verify_exercises() {
     count=0
     for exercise_dir in ./exercises/{concept,practice}/${exercise_slug}/; do
         if [[ -d "${exercise_dir}" ]]; then
+            slug=$(basename "${exercise_dir}")
+            if jq -e --arg s "${slug}" '.exercises.practice[] | select(.slug == $s) | .status == "wip"' config.json > /dev/null 2>&1; then
+                echo "Skipping ${slug} (wip)..."
+                ((++count))
+                continue
+            fi
             if ! verify_exercise "${exercise_dir}"; then
                 rc=1
                 failed+=("$(basename "${exercise_dir}")")
