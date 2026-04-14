@@ -4,10 +4,10 @@ const HEADER = "USING: anagram tools.test ;"
 
 function format_string_array(arr)
     if isempty(arr)
-        return "{ }"
+        return "V{ }"
     end
     items = join(["\"$(s)\"" for s in arr], " ")
-    return "{ $(items) }"
+    return "V{ $(items) }"
 end
 
 function gen_test_case(case)
