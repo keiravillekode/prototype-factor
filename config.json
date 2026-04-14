@@ -271,6 +271,14 @@
         "difficulty": 5
       },
       {
+        "slug": "rail-fence-cipher",
+        "name": "Rail Fence Cipher",
+        "uuid": "7f404c18-968e-41de-8067-7be5596a87ef",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 6
+      },
+      {
         "slug": "say",
         "name": "Say",
         "uuid": "613a30e5-d545-40c7-b41e-f5ccb2c4ec88",
