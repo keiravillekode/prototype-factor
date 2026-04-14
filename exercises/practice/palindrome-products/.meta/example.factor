@@ -15,7 +15,6 @@ IN: palindrome-products
     [ s s-max <= ] [
         s mn - mx min s 2 /i min :> first-hi
         s mx - mn max :> first-lo
-        ! minimum product on this diagonal is at the edge
         value [ first-lo s first-lo - * > ] [ f ] if* not [
             first-lo :> first!
             [ first first-hi <= ] [
@@ -45,32 +44,24 @@ IN: palindrome-products
     mn mx > [ "min must be <= max" throw ] when
     f :> value!
     V{ } clone :> factors
-    mn 2 * :> s-min
-    mx 2 * :> s-max
-    s-max :> s!
-    [ s s-min >= ] [
-        s mn - mx min s 2 /i min :> first-hi
-        s mx - mn max :> first-lo
-        ! maximum product on this diagonal is at s/2
-        s 2 /i dup * value [ < ] [ drop f ] if* not [
-            first-lo :> first!
-            [ first first-hi <= ] [
-                s first - :> second
-                first second * :> product
-                product palindrome? [
-                    value [ product < ] [ t ] if* [
-                        product value!
-                        factors delete-all
+    mx :> second!
+    [ second mn >= ] [
+        second :> first!
+        [ first mn >= value [ first second * > ] [ f ] if* not and ] [
+            first second * :> product
+            product palindrome? [
+                value [ product < ] [ t ] if* [
+                    product value!
+                    factors delete-all
+                    first second 2array factors push
+                ] [
+                    product value = [
                         first second 2array factors push
-                    ] [
-                        product value = [
-                            first second 2array factors push
-                        ] when
-                    ] if
-                ] when
-                first 1 + first!
-            ] while
-        ] when
-        s 1 - s!
+                    ] when
+                ] if
+            ] when
+            first 1 - first!
+        ] while
+        second 1 - second!
     ] while
     value factors >array 2array ;
