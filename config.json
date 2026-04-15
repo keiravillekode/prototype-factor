@@ -183,14 +183,6 @@
         "difficulty": 3
       },
       {
-        "slug": "perfect-numbers",
-        "name": "Perfect Numbers",
-        "uuid": "0420eb1a-c607-4a65-8acb-aa3f60c01302",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 3
-      },
-      {
         "slug": "prime-factors",
         "name": "Prime Factors",
         "uuid": "baaca223-51bd-440b-a490-2775a363c743",
@@ -394,6 +386,14 @@
         "slug": "dominoes",
         "name": "Dominoes",
         "uuid": "cbbd1c5f-587b-4274-9889-1332d9446c63",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 7
+      },
+      {
+        "slug": "perfect-numbers",
+        "name": "Perfect Numbers",
+        "uuid": "0420eb1a-c607-4a65-8acb-aa3f60c01302",
         "practices": [],
         "prerequisites": [],
         "difficulty": 7

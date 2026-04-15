@@ -19,3 +19,4 @@ STOP-HERE
 { "deficient" } [ 1 classify ] unit-test
 [ 0 classify ] [ "Classification is only possible for positive integers." = ] must-fail-with
 [ -1 classify ] [ "Classification is only possible for positive integers." = ] must-fail-with
+{ "deficient" } [ 8796027459974431 classify ] unit-test

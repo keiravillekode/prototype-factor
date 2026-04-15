@@ -3,7 +3,8 @@ module PerfectNumbers
 const HEADER = "USING: perfect-numbers tools.test ;"
 
 function gen_test_case(case)
-    number = Int(case["input"]["number"])
+    raw = case["input"]["number"]
+    number = raw isa AbstractFloat ? string(BigInt(round(raw))) : string(Int(raw))
     expected = case["expected"]
     if expected isa Dict
         msg = expected["error"]

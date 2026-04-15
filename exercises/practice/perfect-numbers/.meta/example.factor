@@ -1,15 +1,32 @@
-USING: combinators kernel math math.order ranges sequences ;
+USING: combinators kernel locals math ;
 IN: perfect-numbers
 
-: aliquot-sum ( n -- sum )
-    dup 1 = [ drop 0 ] [
-        dup 1 swap 1 - [a..b] [ over swap mod 0 = ] filter sum nip
-    ] if ;
+:: sigma ( n -- sum )
+    n :> remaining!
+    1 :> result!
+    2 :> p!
+    1 :> step!
+    [ p p * remaining <= ] [
+        remaining p mod 0 = [
+            1 :> series!
+            [ remaining p mod 0 = ] [
+                remaining p /i remaining!
+                p series * 1 + series!
+            ] while
+            result series * result!
+        ] when
+        p step + p!
+        2 step!
+    ] while
+    remaining 1 > [
+        result remaining 1 + * result!
+    ] when
+    result ;
 
 : classify ( n -- str )
     dup 0 > [ "Classification is only possible for positive integers." throw ] unless
-    dup aliquot-sum {
-        { [ 2dup = ] [ 2drop "perfect" ] }
+    dup 2 * swap sigma {
+        { [ 2dup > ] [ 2drop "deficient" ] }
         { [ 2dup < ] [ 2drop "abundant" ] }
-        [ 2drop "deficient" ]
+        [ 2drop "perfect" ]
     } cond ;
