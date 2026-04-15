@@ -1,4 +1,4 @@
-USING: kernel sequences sets unicode ;
+USING: kernel math sequences sets unicode ;
 IN: pangram
 
 : pangram? ( sentence -- ? )

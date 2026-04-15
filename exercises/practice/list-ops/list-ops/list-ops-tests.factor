@@ -1,4 +1,4 @@
-USING: list-ops kernel tools.test lexer ;
+USING: list-ops math kernel tools.test lexer ;
 
 : STOP-HERE ( -- ) lexer get [ text>> length ] keep line<< ; parsing
 

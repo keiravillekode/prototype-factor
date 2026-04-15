@@ -191,6 +191,14 @@
         "difficulty": 3
       },
       {
+        "slug": "prime-factors",
+        "name": "Prime Factors",
+        "uuid": "baaca223-51bd-440b-a490-2775a363c743",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 3
+      },
+      {
         "slug": "raindrops",
         "name": "Raindrops",
         "uuid": "c4c768de-5852-40e7-ac90-d7a8e9bb4926",
@@ -263,6 +271,14 @@
         "difficulty": 4
       },
       {
+        "slug": "word-count",
+        "name": "Word Count",
+        "uuid": "f0a2b8f5-b244-4c35-86a7-9bf86843093c",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 4
+      },
+      {
         "slug": "affine-cipher",
         "name": "Affine Cipher",
         "uuid": "3e018380-7d24-403e-a951-b6f33ccc8afd",
@@ -274,6 +290,14 @@
         "slug": "anagram",
         "name": "Anagram",
         "uuid": "ec107dbf-5123-4405-934e-3e0846433fd0",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
+        "slug": "clock",
+        "name": "Clock",
+        "uuid": "2a606909-644b-4fd3-bd6c-bf0bb605a48d",
         "practices": [],
         "prerequisites": [],
         "difficulty": 5
@@ -338,6 +362,14 @@
         "slug": "game-of-life",
         "name": "Conway's Game of Life",
         "uuid": "36771f7d-aee3-44bd-a718-60efeaca3a8a",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 6
+      },
+      {
+        "slug": "ocr-numbers",
+        "name": "OCR Numbers",
+        "uuid": "725a35a9-b2ae-4c71-8dc9-a801a8699bd2",
         "practices": [],
         "prerequisites": [],
         "difficulty": 6

@@ -1,6 +1,6 @@
 module ListOps
 
-const HEADER = "USING: list-ops tools.test ;"
+const HEADER = "USING: list-ops math tools.test ;"
 
 # Map canonical property names to our Factor word names
 const WORD_NAMES = Dict(
