@@ -2,9 +2,6 @@ module PalindromeProducts
 
 const HEADER = "USING: palindrome-products tools.test ;"
 
-function to_int_str(n)
-    n isa AbstractFloat ? string(BigInt(round(n))) : string(Int(n))
-end
 
 function format_factors(factors)
     pairs = map(f -> "{ $(to_int_str(f[1])) $(to_int_str(f[2])) }", factors)

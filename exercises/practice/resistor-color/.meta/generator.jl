@@ -2,11 +2,6 @@ module ResistorColor
 
 const HEADER = "USING: resistor-color tools.test ;"
 
-function format_string_array(arr)
-    parts = map(s -> "\"$(s)\"", arr)
-    return "{ $(join(parts, " ")) }"
-end
-
 function gen_test_case(case)
     prop = case["property"]
     if prop == "colorCode"

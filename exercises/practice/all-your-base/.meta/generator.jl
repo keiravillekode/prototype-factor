@@ -2,12 +2,9 @@ module AllYourBase
 
 const HEADER = "USING: all-your-base tools.test ;"
 
-function format_array(arr)
-    return "{ $(join(arr, " ")) }"
-end
 
 function gen_test_case(case)
-    digits = format_array(case["input"]["digits"])
+    digits = format_int_array(case["input"]["digits"])
     ib = case["input"]["inputBase"]
     ob = case["input"]["outputBase"]
     expected = case["expected"]
@@ -15,7 +12,7 @@ function gen_test_case(case)
         msg = expected["error"]
         return """[ $(digits) $(ib) $(ob) rebase ] [ "$(msg)" = ] must-fail-with"""
     else
-        exp_str = format_array(expected)
+        exp_str = format_int_array(expected)
         return "{ $(exp_str) } [ $(digits) $(ib) $(ob) rebase ] unit-test"
     end
 end

@@ -2,13 +2,8 @@ module OcrNumbers
 
 const HEADER = "USING: ocr-numbers tools.test ;"
 
-function format_rows(rows)
-    parts = map(s -> "\"$(s)\"", rows)
-    return "{ $(join(parts, " ")) }"
-end
-
 function gen_test_case(case)
-    rows = format_rows(case["input"]["rows"])
+    rows = format_string_array(case["input"]["rows"])
     expected = case["expected"]
     if expected isa Dict
         msg = expected["error"]

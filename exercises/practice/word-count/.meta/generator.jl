@@ -2,13 +2,6 @@ module WordCount
 
 const HEADER = "USING: word-count tools.test ;"
 
-function escape_factor(s)
-    s = replace(s, "\\" => "\\\\")
-    s = replace(s, "\"" => "\\\"")
-    s = replace(s, "\n" => "\\n")
-    s = replace(s, "\t" => "\\t")
-    return s
-end
 
 function format_expected(expected)
     pairs = map(sort(collect(expected), by=first)) do (k, v)

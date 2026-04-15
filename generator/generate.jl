@@ -2,6 +2,9 @@
 using JSON3, TOML
 
 const GENERATOR_DIR = @__DIR__
+
+# Load shared utilities into Main so exercise modules can access them
+include(joinpath(GENERATOR_DIR, "utils.jl"))
 const TRACK_DIR = dirname(GENERATOR_DIR)
 
 function read_canonical_data(exercise)
