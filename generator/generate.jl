@@ -2,9 +2,6 @@
 using JSON3, TOML
 
 const GENERATOR_DIR = @__DIR__
-
-# Load shared utilities into Main so exercise modules can access them
-include(joinpath(GENERATOR_DIR, "utils.jl"))
 const TRACK_DIR = dirname(GENERATOR_DIR)
 
 function read_canonical_data(exercise)
@@ -85,10 +82,16 @@ function load_extra_cases(exercise)
     return [to_dict(c) for c in JSON3.read(read(path, String))]
 end
 
+const UTILS_PATH = joinpath(GENERATOR_DIR, "utils.jl")
+
 function load_exercise_module(slug)
     path = joinpath(TRACK_DIR, "exercises", "practice", slug, ".meta", "generator.jl")
     isfile(path) || error("No generator module found: $path")
-    mod = include(path)
+    code = read(path, String)
+    # Inject utils include after the module declaration line
+    code = replace(code, r"^(module \w+)"m =>
+        SubstitutionString("\\1\ninclude(\"$(escape_string(UTILS_PATH))\")"))
+    mod = include_string(Main, code, path)
     return mod
 end
 

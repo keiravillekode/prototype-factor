@@ -40,7 +40,7 @@ end
 """Format a nested array (array of arrays of ints) as a Factor literal."""
 function format_nested_array(arr)
     parts = map(arr) do x
-        x isa AbstractVector ? format_int_array(x) : to_int_str(x)
+        x isa AbstractVector ? format_nested_array(x) : to_int_str(x)
     end
     return "{ $(join(parts, " ")) }"
 end
