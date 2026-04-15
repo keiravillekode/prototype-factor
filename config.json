@@ -33,18 +33,18 @@
       {
         "slug": "hello-world",
         "name": "Hello World",
-        "uuid": "43272b2f-442b-42a7-a2ab-5955949121df",
+        "uuid": "c81c4175-f06b-404d-8c01-c4a6dba661d3",
         "practices": [],
         "prerequisites": [],
         "difficulty": 1
       },
       {
-        "slug": "acronym",
-        "name": "Acronym",
-        "uuid": "a850eaf1-2a7b-4ed4-9cb7-7806ea3603a0",
+        "slug": "isogram",
+        "name": "Isogram",
+        "uuid": "d3afeeb3-8c4e-4a31-81a2-fb039ab3c5af",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 2
+        "difficulty": 1
       },
       {
         "slug": "collatz-conjecture",
@@ -87,22 +87,6 @@
         "difficulty": 2
       },
       {
-        "slug": "isogram",
-        "name": "Isogram",
-        "uuid": "e5f1ae81-3bdf-4ef7-af48-42f1823a10a4",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 2
-      },
-      {
-        "slug": "leap",
-        "name": "Leap",
-        "uuid": "eec1c67c-ff96-4676-b520-89b779cb9535",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 2
-      },
-      {
         "slug": "pangram",
         "name": "Pangram",
         "uuid": "b72e79d7-c229-4d7d-9abc-e304ce24dfed",
@@ -111,9 +95,9 @@
         "difficulty": 2
       },
       {
-        "slug": "reverse-string",
-        "name": "Reverse String",
-        "uuid": "19c0927e-270b-44d8-bb9a-d8eab63becc7",
+        "slug": "resistor-color",
+        "name": "Resistor Color",
+        "uuid": "4bf98489-3318-45cd-a0df-309fd2ff4158",
         "practices": [],
         "prerequisites": [],
         "difficulty": 2
@@ -137,15 +121,15 @@
       {
         "slug": "two-fer",
         "name": "Two-Fer",
-        "uuid": "b86f031e-d010-4be9-8dad-23fa52b32ba8",
+        "uuid": "22c5c529-07bb-4df2-8d2f-e470d1ed48da",
         "practices": [],
         "prerequisites": [],
         "difficulty": 2
       },
       {
-        "slug": "armstrong-numbers",
-        "name": "Armstrong Numbers",
-        "uuid": "4441ac14-6693-4a08-bfdb-43e106a9e2f0",
+        "slug": "acronym",
+        "name": "Acronym",
+        "uuid": "e8733850-cc86-4d29-8e5a-92078576e193",
         "practices": [],
         "prerequisites": [],
         "difficulty": 3
@@ -183,6 +167,14 @@
         "difficulty": 3
       },
       {
+        "slug": "leap",
+        "name": "Leap",
+        "uuid": "17fb2814-2164-4933-8f72-adeb9b2b5ccf",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 3
+      },
+      {
         "slug": "line-up",
         "name": "Line Up",
         "uuid": "aafcd21c-c1b9-4a1b-bf65-50251f466029",
@@ -201,15 +193,15 @@
       {
         "slug": "raindrops",
         "name": "Raindrops",
-        "uuid": "903ef19b-d6d9-4e27-ac87-2de2546d1f85",
+        "uuid": "c4c768de-5852-40e7-ac90-d7a8e9bb4926",
         "practices": [],
         "prerequisites": [],
         "difficulty": 3
       },
       {
-        "slug": "resistor-color",
-        "name": "Resistor Color",
-        "uuid": "b888247e-17f0-461e-88ed-2ad0ce6f9785",
+        "slug": "reverse-string",
+        "name": "Reverse String",
+        "uuid": "5d28be8e-395e-4e2a-aab6-c5777bcb0668",
         "practices": [],
         "prerequisites": [],
         "difficulty": 3
@@ -229,6 +221,14 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 3
+      },
+      {
+        "slug": "armstrong-numbers",
+        "name": "Armstrong Numbers",
+        "uuid": "61681eb1-b68b-40b3-9bc1-11904d4940e6",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 4
       },
       {
         "slug": "luhn",
@@ -266,14 +266,6 @@
         "slug": "affine-cipher",
         "name": "Affine Cipher",
         "uuid": "3e018380-7d24-403e-a951-b6f33ccc8afd",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 5
-      },
-      {
-        "slug": "all-your-base",
-        "name": "All Your Base",
-        "uuid": "54f1da9d-5775-4cf3-998e-f91454098f38",
         "practices": [],
         "prerequisites": [],
         "difficulty": 5
@@ -333,6 +325,14 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 5
+      },
+      {
+        "slug": "all-your-base",
+        "name": "All Your Base",
+        "uuid": "c5a7ddcd-74ff-4ecf-8ff7-9f871f56084d",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 6
       },
       {
         "slug": "game-of-life",
