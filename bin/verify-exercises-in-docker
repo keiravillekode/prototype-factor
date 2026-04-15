@@ -54,11 +54,6 @@ verify_exercise() {
     slug="${dir##*/}"
     tmpdir="$(mktemp -d -t "exercism-verify-${slug}-XXXXX")"
 
-    if jq -e --arg slug "${slug}" '.exercises.practice[] | select(.slug == $slug and .status == "deprecated")' config.json >/dev/null 2>&1; then
-        echo "Skipping ${slug} (deprecated)..."
-        return 0
-    fi
-
     if jq -e --arg slug "${slug}" '.exercises.practice[] | select(.slug == $slug and .status == "wip")' config.json >/dev/null 2>&1; then
         echo "Skipping ${slug} (wip)..."
         return 0
@@ -109,8 +104,7 @@ done
 shift "$((OPTIND - 1))"
 
 if [[ -z "${image}" ]]; then
-    image="factor-test-runner:latest"
-    # image="exercism/purescript-test-runner"
+    image="exercism/factor-test-runner:latest"
     # docker pull "${image}" ||
     #     die "docker pull ${image} failed. Check the test runner docs at https://exercism.org/docs/building/tooling/test-runners for more information."
 fi
