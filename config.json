@@ -273,10 +273,11 @@
       {
         "slug": "accumulate",
         "name": "Accumulate",
-        "uuid": "d104e8df-d4bd-479e-b526-3c8173fea206",
+        "uuid": "8a373305-98c9-4b19-9011-085abe19cfed",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 5
+        "difficulty": 5,
+        "status": "deprecated"
       },
       {
         "slug": "affine-cipher",
