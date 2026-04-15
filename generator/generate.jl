@@ -77,7 +77,7 @@ function filter_by_toml(cases, exercise)
 end
 
 function load_extra_cases(exercise)
-    path = joinpath(TRACK_DIR, "exercises", "practice", exercise, ".meta", "extra.json")
+    path = joinpath(TRACK_DIR, "exercises", "practice", exercise, ".meta", "supplements.json")
     isfile(path) || return Dict{String,Any}[]
     return [to_dict(c) for c in JSON3.read(read(path, String))]
 end
