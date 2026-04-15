@@ -271,6 +271,14 @@
         "difficulty": 4
       },
       {
+        "slug": "accumulate",
+        "name": "Accumulate",
+        "uuid": "d104e8df-d4bd-479e-b526-3c8173fea206",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
         "slug": "affine-cipher",
         "name": "Affine Cipher",
         "uuid": "3e018380-7d24-403e-a951-b6f33ccc8afd",
