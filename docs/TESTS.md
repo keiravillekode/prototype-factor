@@ -56,4 +56,33 @@ STOP-HERE
 Once the first test passes, delete the `STOP-HERE` line (or move it further down) to reveal the next tests.
 When all tests pass, remove `STOP-HERE` entirely.
 
+## Concept exercises and `TASK:` markers
+
+Concept exercises are broken into numbered tasks; the test runner reports
+results grouped by task.
+A test file flags which task each `unit-test` belongs to with a `TASK:`
+marker line.
+`TASK:` is defined at the top of the file as a parsing word that swallows
+the rest of its line at parse time, so it is a no-op to Factor — only the
+test runner inspects it.
+
+```factor
+USING: my-exercise kernel tools.test lexer ;
+
+: TASK: ( -- ) lexer get [ text>> length ] keep line<< ; parsing
+
+TASK: 1 first task label
+{ ... } [ ... ] unit-test
+{ ... } [ ... ] unit-test
+
+TASK: 2 second task label
+{ ... } [ ... ] unit-test
+```
+
+Every `unit-test` after a `TASK: N` belongs to task `N` until the next
+`TASK:` marker.
+The text after the number is a human label — it is ignored by the runner
+but handy when reading the file.
+Practice exercises don't use `TASK:`; only concept exercises need it.
+
 [tools-test]: https://docs.factorcode.org/content/vocab-tools.test.html

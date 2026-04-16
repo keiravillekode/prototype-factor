@@ -1,0 +1,21 @@
+{
+  "authors": [
+    "willigersptc"
+  ],
+  "files": {
+    "solution": [
+      "annalyns-infiltration/annalyns-infiltration.factor"
+    ],
+    "test": [
+      "annalyns-infiltration/annalyns-infiltration-tests.factor"
+    ],
+    "exemplar": [
+      ".meta/exemplar.factor"
+    ]
+  },
+  "forked_from": [
+    "julia/annalyns-infiltration"
+  ],
+  "blurb": "Learn about boolean expressions by implementing the quest logic for a new RPG.",
+  "icon": "annalyns-infiltration"
+}

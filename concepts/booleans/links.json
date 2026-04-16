@@ -1,0 +1,10 @@
+[
+  {
+    "url": "https://docs.factorcode.org/content/article-booleans.html",
+    "description": "Booleans — the Factor documentation"
+  },
+  {
+    "url": "https://docs.factorcode.org/content/vocab-kernel.html",
+    "description": "kernel — the vocabulary that defines and, or, not"
+  }
+]

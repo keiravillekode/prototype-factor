@@ -3,7 +3,7 @@
   "slug": "factor",
   "active": false,
   "status": {
-    "concept_exercises": false,
+    "concept_exercises": true,
     "test_runner": false,
     "representer": false,
     "analyzer": false
@@ -29,6 +29,18 @@
     ]
   },
   "exercises": {
+    "concept": [
+      {
+        "slug": "annalyns-infiltration",
+        "name": "Annalyns Infiltration",
+        "uuid": "57a3408b-1c45-4860-9605-47eb6651fb81",
+        "concepts": [
+          "booleans"
+        ],
+        "prerequisites": [],
+        "status": "wip"
+      }
+    ],
     "practice": [
       {
         "slug": "hello-world",
@@ -463,6 +475,13 @@
       "parallel-letter-frequency"
     ]
   },
+  "concepts": [
+    {
+      "uuid": "e8578a33-fa96-421f-b1c8-772b3f23b03d",
+      "slug": "booleans",
+      "name": "Booleans"
+    }
+  ],
   "key_features": [
     {
       "title": "Concatenative",
